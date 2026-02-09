@@ -15,6 +15,7 @@ public class Calculator {
     public double pi = 3.142;
 
     public int add(int x, int y) {
+        System.out.println("x:" + x);
         return x +y;
     }
 
