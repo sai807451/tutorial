@@ -1,11 +1,23 @@
-package com.learning;
-
 public class SwitchStatement {
     public static void main(String arg[]) {
 
         switchPractice1();
         switchPractice2();
-
+//       WeekDays week=WeekDays.TUESDAY;
+//       switch(week){
+//            case SUNDAY:
+//                System.out.println("this is my fav day of week");
+//                break;
+//           case MONDAY:
+//               System.out.println("this is my least fav day of week");
+//               break;
+//           case TUESDAY:
+//               System.out.println("this is NOT my fav day ");
+//               break;
+//           default:
+//               System.out.println("holidays are my fav day ");
+//               break;
+        }
 
     }
 
@@ -53,7 +65,10 @@ public class SwitchStatement {
                 System.out.println("passed exam percnetage" + 100);
         }
     }
+
+void main() {
 }
+
 
 /*public class Geeks {
 
