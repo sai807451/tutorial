@@ -1,4 +1,14 @@
 package com.learning;
 
-public class Abstract {
+abstract class Bike {
+
+    abstract void ride();
+
+    void gear() {
+        System.out.println("every bike has manual gears");
+    }
+
 }
+
+
+

@@ -13,6 +13,7 @@ public class Loops {
         //loops7();
     }
 
+
     private static void loops1() {
         int j = 6;
         while (j >= 10)

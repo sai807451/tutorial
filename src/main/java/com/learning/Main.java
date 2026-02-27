@@ -6,8 +6,13 @@ package com.learning;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+            Car car= new Honda();
+            Sporty sportCar= new Sporty();
+            sportCar.version(car);
 
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+
+
+            //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
 //        for (int i = 1; i <= 5; i++) {
