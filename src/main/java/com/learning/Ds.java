@@ -1,9 +1,8 @@
 package com.learning;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+
+import static com.learning.Collect.getMaxNumber;
 
 //First → length (ascending)
 //If same length → alphabetical order
@@ -11,6 +10,12 @@ import java.util.List;
 
 public class Ds {
     public static void main(String args[]) {
+
+        List<Integer> numbers = Arrays.asList(3, 30, 300, 103, 33);
+        Integer maxNumber = getMaxNumber(numbers);
+        System.out.println("Max Number :" + maxNumber);
+
+
         List<String> name = new ArrayList<>();
         {
             name.add("apple");

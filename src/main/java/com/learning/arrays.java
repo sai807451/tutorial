@@ -2,7 +2,25 @@ package com.learning;
 
 
 
+
+
 public class arrays {
+
+    public static  void  Minimum(int max,int min) {
+        int[] arr = {5, 10, 15, 20, 25};
+        int max1 = arr[0];
+        int min1 = arr[0];
+        for (int num : arr)
+            if (num > max) {
+                num = max;
+
+                if (num < min) {
+                    num = min;
+                }
+
+
+            }}
+
     public static void main(String[] args) {
         int nums[][] = new int[3][4];
 
@@ -75,7 +93,7 @@ public class arrays {
         int[] sai = {1, 2, 3, 4, 5, 6};
 
         for (int r = sai.length - 1; r >= 0; r--)
-            if (sai[r] % 2 != 0) {
+            if (sai[r] % 2 !=0) {
                 System.out.println(sai[r]);
             }
 
@@ -101,7 +119,8 @@ public class arrays {
 
         System.out.println(sum);
 
-
+//          int result=Minimum();
+//          System.out.println("Max Number: " + result );
     }
 }
 
