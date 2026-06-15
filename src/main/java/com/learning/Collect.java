@@ -62,6 +62,17 @@ public class Collect {
         cars.add("Honda");
         cars.add("Tesla");
 
+        Iterator<String> vehicle=cars.iterator();
+        while(vehicle.hasNext()) {
+            String brand = vehicle.next();
+
+            if(cars.equals("Tesla")){
+//                String vehicle=cars.remove("Tesla");
+            }
+
+
+        System.out.println("Using Iterator " + cars);}
+
         for(int i=0; i<1000000;i++) {
             cars.add( "Toyota");
         }

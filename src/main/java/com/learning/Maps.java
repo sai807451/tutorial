@@ -4,8 +4,10 @@ public class Maps {
 
     public static Map<Integer,Integer> frequency(List<Integer>list){
         Map<Integer,Integer>map=new HashMap<>();
-        for(Integer num: list);
-        map.put(num,map.getOrDefault(num,0)+1);
+        for(Integer num: list) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        return map;
     }
 
         public static void main(String[] args) {
