@@ -8,6 +8,14 @@ public class Methods {
             String brand=object.buyWipers(5);
             System.out.println(brand);
 
+            OverLoad  object1= new OverLoad();
+            object1.add(1,2,3);
+
+            object1.add(1,2);
+            object1.add(2,3);
+            object1.add("sai","kumar");
+
+            System.out.println(object1.add(1,2,3));
 
 
         }

@@ -11,6 +11,29 @@ public class Collection1 {
         num1.add(35);
         num1.add(30);
         num1.add(40);
+
+        for(Integer i : num1) {
+            System.out.println("for loop: " + i);
+            if(i >100) {
+                //num1.remove(i);
+            }
+        }
+
+        Iterator<Integer> iterator = num1.iterator();
+        while(iterator.hasNext()) {
+            Integer nextValue = iterator.next();
+            if(nextValue >100) {
+                iterator.remove();
+            }
+            System.out.println("iterator : " + nextValue);
+        }
+
+        Iterator<Integer> iterator2 = num1.iterator();
+        while(iterator2.hasNext()) {
+            Integer nextValue = iterator2.next();
+            System.out.println("after delete :" +  nextValue);
+        }
+
 //        int max=num1.get(1);
 //        int min=num1.get(1);
 //
@@ -26,7 +49,10 @@ public class Collection1 {
                 for(Object n : num1){
                     int sum=(Integer)n;
                     System.out.println(sum*2);
-                }}}
+                }
+    }
+
+}
 
 
 //        num1.add(3,33);
@@ -46,7 +72,6 @@ public class Collection1 {
 //       for(Integer n: num1){
 //           System.out.println(n);
 //       }
-//
 //
 //        System.out.println(size);
 //        System.out.println(total);

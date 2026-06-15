@@ -2,8 +2,44 @@ package com.learning;
 
 
 
+
 public class arrays {
+
+
+
     public static void main(String[] args) {
+        int[] numbers2 = {3, -1, 7, 0, 9};
+        int[] numbers1 = {10, 5, 8, 20, 15};
+        int largest = Integer.MIN_VALUE;
+        int SecondLargest = Integer.MIN_VALUE;
+
+        for (int num1 : numbers1) {
+            if (num1 > largest) {
+                SecondLargest = largest;
+                largest = num1;
+            } else if (num1 > SecondLargest && num1 != largest) {
+                SecondLargest = num1;
+
+            }
+
+        }
+        System.out.println("SecondLargest: " + SecondLargest);
+
+
+        int[] numbers = {-1, -2, -4, 5, 6, 7};
+        int countPositive = 0;
+        int countNegative = 0;
+
+        for (int num : numbers) {
+            if (num >= 0) {
+                countPositive++;
+            } else {
+                countNegative++;
+            }
+
+        }
+        System.out.println("count positive: " + countPositive + "countNegative: " + countNegative);
+
         int nums[][] = new int[3][4];
 
 
@@ -95,15 +131,60 @@ public class arrays {
         int sum = 0;
 
 
-        for (int h = 0; h < dimen.length; h++)
-        {for (int y = 0; y< dimen[h].length; y++)
-                sum = sum + dimen[h][y];}
+        for (int h = 0; h < dimen.length; h++) {
+            for (int y = 0; y < dimen[h].length; y++)
+                sum = sum + dimen[h][y];
+        }
 
         System.out.println(sum);
 
+//          int result=Minimum();
+//          System.out.println("Max Number: " + result );
 
+
+        int[][] arr = {
+                {10, 20, 30},
+                {40, 50, 60}
+        };
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+
+        }
+
+
+        numbers = new int[]{20, 30, 55, 89, 88};
+        largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        for (int num : numbers) {
+            if (num > largest
+            ) {
+                secondLargest = largest;
+                largest = num;
+
+            } else if (num > secondLargest) {
+                secondLargest = num;
+
+            }
+        }
+        System.out.println("secondLargest " + secondLargest);
+
+
+        int array[] = {1, 2, 3, 4, 5};
+        int small = array[1];
+        for (int num : array) {
+            if (num < small) {
+                small = num;
+            }
+
+        }
+        System.out.println(small);
     }
+
 }
+
 
 
 
